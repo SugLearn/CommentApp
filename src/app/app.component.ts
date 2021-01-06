@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'CommentsApp';
+  comments: string;
+
+  receiveComment(event){
+    this.comments = event;
+    console.log('Parent component value' + this.comments);
+
+  }
 }
